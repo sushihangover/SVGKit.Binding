@@ -32,6 +32,9 @@ bld/
 #macOS
 .DS_Store
 
+#Xcode
+*/DerivedData/
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
