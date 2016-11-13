@@ -40,4 +40,7 @@ Global
 		{76090B75-DC07-43EE-8347-A441E414107A}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{76090B75-DC07-43EE-8347-A441E414107A}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 1.0
+	EndGlobalSection
 EndGlobal
