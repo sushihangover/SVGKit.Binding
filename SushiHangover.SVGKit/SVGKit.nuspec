@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>SushiHangover.SVGKit.Binding</id>
+    <version>1.0.0</version>
+    <description>
+      This is a Xamarin.iOS binding project for SVGKit
+    </description>
+    <title>SushiHangover.SVGKit.Binding</title>
+    <language>en-US</language>
+    <copyright>2016 - SushiHangover/RobertN</copyright>
+    <authors>SushiHangover</authors>
+    <projectUrl>https://github.com/sushihangover/SVGKit.Binding</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sushihangover/SVGKit.Binding/master/Media/icon.png</iconUrl>
+    <licenseUrl>https://github.com/sushihangover/SVGKit.Binding</licenseUrl>
+    <tags>SVG SVGKit Xamarin Xamarin.iOS iOS SushiHangover</tags>
+  </metadata>
+  <files>
+    <file src="bin/Release/SushiHangover.SVGKit.dll" target="lib/Xamarin.iOS10" />
+  </files>
+</package>
+

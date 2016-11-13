@@ -15,6 +15,22 @@ Ref: [https://github.com/SVGKit/SVGKit](https://github.com/SVGKit/SVGKit)
 
 License : [https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE](https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE)
 
+##Nuget:
+
+`PM> Install-Package SushiHangover.SVGKit`
+
+Ref: [https://www.nuget.org/packages/SushiHangover.SVGKit](https://www.nuget.org/packages/SushiHangover.SVGKit)
+
+##Issues?
+
+###Binding Issues? [GitHub Issues](https://github.com/sushihangover/SVGKit.Binding/issues)
+
+###SVGKit Library? [GitHub Issues](https://github.com/SVGKit/SVGKit/issues)
+
+##Need Help?
+
+Post on [StackOverflow](http://stackoverflow.com/questions/tagged/xamarin+realm) with the tags: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
+
 ##Usage:
 
 ###Namespace: `SVGKit` 
@@ -41,6 +57,17 @@ License : [https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE](https://github.com
 	imageView.Frame = View.Frame;
 	View.Add(imageView);
 
+
+##Building:
+
+###`xbuild` or `msbuild` based:
+
+	xbuild /p:SolutionDir=./ /target:Clean /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
+	xbuild /p:SolutionDir=./ /target:Build /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
+	
+#####Building a Release Target also builds the Nuget package:
+
+	bin/Release/SushiHangover.SVGKit.Binding.1.x.x.nupkg
 
 ##CI:
 
