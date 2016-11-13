@@ -1,0 +1,3 @@
+[submodule "SVGKit"]
+	path = SVGKit
+	url = https://github.com/SVGKit/SVGKit.git
