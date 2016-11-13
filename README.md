@@ -3,6 +3,7 @@
 
 This is a `Xamarin.iOS` binding project for `SVGKit`
 
+* SVGKit v2.x - live development, latest fixes/features
 * Xamarin.iOS Version: 10.4.0.4
 * Xcode 8.1 (11544) Build 8B62
 
