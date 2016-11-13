@@ -17,9 +17,9 @@ License : [https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE](https://github.com
 
 ##Nuget:
 
-`PM> Install-Package SushiHangover.SVGKit`
+`PM> Install-Package SushiHangover.SVGKit.Binding`
 
-Ref: [https://www.nuget.org/packages/SushiHangover.SVGKit](https://www.nuget.org/packages/SushiHangover.SVGKit)
+Ref: [https://www.nuget.org/packages/SushiHangover.SVGKit.Binding](https://www.nuget.org/packages/SushiHangover.SVGKit.Binding)
 
 ##Issues?
 
@@ -29,7 +29,13 @@ Ref: [https://www.nuget.org/packages/SushiHangover.SVGKit](https://www.nuget.org
 
 ##Need Help?
 
-Post on [StackOverflow](http://stackoverflow.com/questions/tagged/xamarin+realm) with the tags: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
+Post general `SVGKit` questions on [StackOverflow](http://stackoverflow.com/questions/tagged/ios+svgkit)
+
+Tagged:  **`[SVGKit]`** **`[iOS]`**
+
+Specfic `Xamarin.iOS` & `SVGKit` questions on [StackOverflow] (http://stackoverflow.com/questions/tagged/ios+svgkit+xamarin+xamarin.ios)
+
+Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 ##Usage:
 
@@ -51,27 +57,28 @@ Post on [StackOverflow](http://stackoverflow.com/questions/tagged/xamarin+realm)
 ###Load SVG from a Bundle Path
 
 ####Build action: `Content`
-
-	var image = new SVGKImage(NSBundle.MainBundle.BundlePath + "/Media/Sushi.svg");
+	
+	var image = new SVGKImage(Path.Combine(NSBundle.MainBundle.BundlePath, "Media/Joker.svg"));
 	var imageView = new SVGKFastImageView(image);
 	imageView.Frame = View.Frame;
 	View.Add(imageView);
 
+![](Media/SimulatorScreen2.png)
 
-##Building:
+##Build:
 
-###`xbuild` or `msbuild` based:
+###Building `SushiHangover.SVGKit.Binding`
+
+#####`xbuild` or `msbuild` based:
 
 	xbuild /p:SolutionDir=./ /target:Clean /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
 	xbuild /p:SolutionDir=./ /target:Build /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
 	
-#####Building a Release Target also builds the Nuget package:
+#####Building `Target:Release` also builds the Nuget package:
 
 	bin/Release/SushiHangover.SVGKit.Binding.1.x.x.nupkg
 
-##CI:
-
-###Build static `SVGKit`:
+###Building a static `SVGKit` library:
 
 	pushd SVGKit
 	xcodebuild -project SVGKit-iOS.xcodeproj clean
@@ -81,12 +88,6 @@ Post on [StackOverflow](http://stackoverflow.com/questions/tagged/xamarin+realm)
 
 **Note:** The output from xcrun/lipo should contain `armv7` and `x86_64`
 	
-###Build `SushiHangover.SVGKit`:
-
-	xbuild
-
-
-	Architectures in the fat file: SVGKit/build/Release-universal/libSVGKit-iOS.2.0.0.a are: armv7 x86_64
 
 ##Binding Info:
 

@@ -1,6 +1,8 @@
 ﻿using System;
-
+using Foundation;
 using UIKit;
+using SushiHangover.SVGKit;
+using System.IO;
 
 namespace Nuget.iOS.Text
 {
@@ -14,7 +16,11 @@ namespace Nuget.iOS.Text
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			// Perform any additional setup after loading the view, typically from a nib.
+
+			var image = new SVGKImage(Path.Combine(NSBundle.MainBundle.BundlePath, "Media/Joker.svg"));
+			var imageView = new SVGKFastImageView(image);
+			imageView.Frame = View.Frame;
+			View.Add(imageView);
 		}
 
 		public override void DidReceiveMemoryWarning()

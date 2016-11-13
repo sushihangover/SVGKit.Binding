@@ -4,7 +4,7 @@
     <id>SushiHangover.SVGKit.Binding</id>
     <version>1.0.0</version>
     <description>
-      This is a Xamarin.iOS binding project for SVGKit
+      This is a Xamarin.iOS binding project for SVGKit v2.x
     </description>
     <title>SushiHangover.SVGKit.Binding</title>
     <language>en-US</language>
