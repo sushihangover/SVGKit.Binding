@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>SushiHangover.SVGKit.Binding</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>
       This is a Xamarin.iOS binding project for SVGKit v2.x
     </description>

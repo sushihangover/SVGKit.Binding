@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SVGKit.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
@@ -45,7 +46,7 @@
     <ObjcBindingCoreSource Include="Extras.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\SVGKit\build\Release-universal\libSVGKit-iOS.2.0.0.a">
+    <NativeReference Include="..\SVGKit\DerivedData\SVGKit-iOS\Build\Products\Release-universal\libSVGKit-iOS.2.0.0.a">
       <Kind>Static</Kind>
       <ForceLoad>True</ForceLoad>
       <Frameworks>CocoaLumberjack CoreText CoreImage QuartzCore CoreGraphics</Frameworks>
@@ -55,9 +56,6 @@
       <Kind>Framework</Kind>
       <ForceLoad>True</ForceLoad>
     </NativeReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SVGKit.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
   <Import Project="..\.nuget\NuGet.targets" Condition="Exists('..\.nuget\NuGet.targets')" />

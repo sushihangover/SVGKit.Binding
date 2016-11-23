@@ -86,7 +86,7 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 	xcrun -sdk iphoneos lipo -info build/Release-universal/libSVGKit-iOS.2.0.0.a
 	popd
 
-**Note:** The output from xcrun/lipo should contain `armv7` and `x86_64`
+**Note:** The output from xcrun/lipo should contain `armv7`, `arm64` and `x86_64`
 	
 
 ##Binding Info:

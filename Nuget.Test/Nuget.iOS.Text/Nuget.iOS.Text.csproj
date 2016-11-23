@@ -9,6 +9,7 @@
     <RootNamespace>Nuget.iOS.Text</RootNamespace>
     <AssemblyName>Nuget.iOS.Text</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,7 +90,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="SushiHangover.SVGKit">
-      <HintPath>..\..\packages\SushiHangover.SVGKit.Binding.1.0.0\lib\Xamarin.iOS10\SushiHangover.SVGKit.dll</HintPath>
+      <HintPath>..\..\packages\SushiHangover.SVGKit.Binding.1.0.2\lib\Xamarin.iOS10\SushiHangover.SVGKit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
