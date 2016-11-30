@@ -92,6 +92,8 @@
     <Reference Include="SushiHangover.SVGKit">
       <HintPath>..\..\packages\SushiHangover.SVGKit.Binding.1.0.2\lib\Xamarin.iOS10\SushiHangover.SVGKit.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -119,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Media\Joker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Media\SVGLogo.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
