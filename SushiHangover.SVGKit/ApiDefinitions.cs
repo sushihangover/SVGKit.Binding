@@ -1232,6 +1232,7 @@ namespace SushiHangover.SVGKit
 
 	// @interface SVGViewSpec : NSObject
 	[BaseType (typeof(NSObject))]
+	[Protocol]
 	interface SVGViewSpec
 	{
 		// @property (readonly, nonatomic) SVGElement * viewTarget;
