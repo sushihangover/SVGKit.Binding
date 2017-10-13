@@ -1,6 +1,6 @@
 ![](https://github.com/sushihangover/SVGKit.Binding/raw/master/Media/icon.png) 
 
-#SushiHangover.SVGKit
+# SushiHangover.SVGKit
 
 This is a `Xamarin.iOS` binding project for `SVGKit`
 
@@ -8,7 +8,7 @@ This is a `Xamarin.iOS` binding project for `SVGKit`
 * Xamarin.iOS Version: 10.4.0.4
 * Xcode Version 9.0 (9A235)
 * 
-##SVGKit
+## SVGKit
 
 >SVGKit is a Cocoa framework for rendering SVG files natively: it's fast and powerful. Some additional info and links are on the wiki
 
@@ -16,19 +16,19 @@ Ref: [https://github.com/SVGKit/SVGKit](https://github.com/SVGKit/SVGKit)
 
 License : [https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE](https://github.com/SVGKit/SVGKit/blob/2.x/LICENSE)
 
-##Nuget:
+## Nuget:
 
 `PM> Install-Package SushiHangover.SVGKit.Binding`
 
 Ref: [https://www.nuget.org/packages/SushiHangover.SVGKit.Binding](https://www.nuget.org/packages/SushiHangover.SVGKit.Binding)
 
-##Issues?
+## Issues?
 
 ###Binding Issues? [GitHub Issues](https://github.com/sushihangover/SVGKit.Binding/issues)
 
-###SVGKit Library? [GitHub Issues](https://github.com/SVGKit/SVGKit/issues)
+### SVGKit Library? [GitHub Issues](https://github.com/SVGKit/SVGKit/issues)
 
-##Need Help?
+## Need Help?
 
 Post general `SVGKit` questions on [StackOverflow](http://stackoverflow.com/questions/tagged/ios+svgkit)
 
@@ -38,15 +38,15 @@ Specfic `Xamarin.iOS` & `SVGKit` questions on [StackOverflow] (http://stackoverf
 
 Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
-##Usage:
+## Usage:
 
-###Namespace: `SVGKit` 
+### Namespace: `SVGKit` 
 
 	using SVGKit;
 
-###Load SVG from a Bundle Resource
+### Load SVG from a Bundle Resource
 
-####Build action: `BundleResource`
+#### Build action: `BundleResource`
 	
 	var image = new SVGKImage("Media/Sushi.svg");
 	var imageView = new SVGKFastImageView(image);
@@ -55,9 +55,9 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 ![](Media/SimulatorScreen.png)
 
-###Load SVG from a Bundle Path
+### Load SVG from a Bundle Path
 
-####Build action: `Content`
+#### Build action: `Content`
 	
 	var image = new SVGKImage(Path.Combine(NSBundle.MainBundle.BundlePath, "Media/Joker.svg"));
 	var imageView = new SVGKFastImageView(image);
@@ -66,9 +66,9 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 ![](Media/SimulatorScreen2.png)
 
-##Build:
+## Build:
 
-###Building `SushiHangover.SVGKit.Binding`
+### Building `SushiHangover.SVGKit.Binding`
 
 #####`msbuild` based:
 
@@ -79,7 +79,7 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 	bin/Release/SushiHangover.SVGKit.Binding.1.x.x.nupkg
 
-###Building a static `SVGKit` library:
+### Building a static `SVGKit` library:
 
 	pushd SVGKit
 	xcodebuild -project SVGKit-iOS.xcodeproj clean
@@ -90,14 +90,14 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 **Note:** The output from xcrun/lipo should contain `armv7`, `arm64` and `x86_64`
 	
 
-##Binding Info:
+## Binding Info:
 
 ###Xamarin Binding Guide
 
 [Binding Objective-C](https://developer.xamarin.com/guides/cross-platform/macios/binding/)
 
 
-###Sharpie
+### Sharpie
 
 	sharpie -tlm-do-not-submit bind --output=SushiHangover.SVGKit --namespace=SushiHangover.SVGKit --sdk=iphoneos10.1 ./SVGKit/build/Release-universal/usr/local/include/*.h
 
