@@ -1056,7 +1056,7 @@ namespace SushiHangover.SVGKit
 	}
 
 	// @protocol DocumentCSS <DocumentStyle>
-	[Protocol, Model]
+	[Protocol]
 	interface IDocumentCSS : IDocumentStyle
 	{
 		// @required -(CSSStyleDeclaration *)getOverrideStyle:(Element *)element pseudoElt:(NSString *)pseudoElt;
@@ -1096,7 +1096,7 @@ namespace SushiHangover.SVGKit
 	interface NSCharacterSet_SVGKExtensions
 	{
 		// +(NSCharacterSet *)SVGWhitespaceCharacterSet;
-		[Static]
+		//[Static]
 		[Export("SVGWhitespaceCharacterSet")]
 		//[Verify (MethodToProperty)]
 		NSCharacterSet SVGWhitespaceCharacterSet();
@@ -2478,7 +2478,7 @@ namespace SushiHangover.SVGKit
 
 	// @interface SVGKLayeredImageView : SVGKImageView
 	[BaseType (typeof(SVGKImageView))]
-	interface SVGKLayeredImageView
+    interface SVGKLayeredImageView : SVGKImageView
 	{
 	}
 

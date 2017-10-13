@@ -2,13 +2,13 @@
 <package>
   <metadata>
     <id>SushiHangover.SVGKit.Binding</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <description>
       This is a Xamarin.iOS binding project for SVGKit v2.x
     </description>
     <title>SushiHangover.SVGKit.Binding</title>
     <language>en-US</language>
-    <copyright>2016 - SushiHangover/RobertN</copyright>
+    <copyright>2016/2017 - SushiHangover/RobertN</copyright>
     <authors>SushiHangover</authors>
     <projectUrl>https://github.com/sushihangover/SVGKit.Binding</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/sushihangover/SVGKit.Binding/master/Media/icon.png</iconUrl>

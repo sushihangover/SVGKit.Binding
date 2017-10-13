@@ -69,10 +69,10 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 ###Building `SushiHangover.SVGKit.Binding`
 
-#####`xbuild` or `msbuild` based:
+#####`msbuild` based:
 
-	xbuild /p:SolutionDir=./ /target:Clean /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
-	xbuild /p:SolutionDir=./ /target:Build /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
+	msbuild /p:SolutionDir=./ /target:Clean /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
+	msbuild /p:SolutionDir=./ /target:Build /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
 	
 #####Building `Target:Release` also builds the Nuget package:
 
