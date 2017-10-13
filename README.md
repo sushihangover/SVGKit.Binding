@@ -7,7 +7,7 @@ This is a `Xamarin.iOS` binding project for `SVGKit`
 * SVGKit v2.x - live development, latest fixes/features
 * Xamarin.iOS Version: 10.4.0.4
 * Xcode Version 9.0 (9A235)
-* 
+
 ## SVGKit
 
 >SVGKit is a Cocoa framework for rendering SVG files natively: it's fast and powerful. Some additional info and links are on the wiki
@@ -70,12 +70,12 @@ Tagged: **`[XAMARIN]`** **`[SVGKit]`** **`[Xamarin.iOS]`** **`[iOS]`**
 
 ### Building `SushiHangover.SVGKit.Binding`
 
-#####`msbuild` based:
+##### `msbuild` based:
 
 	msbuild /p:SolutionDir=./ /target:Clean /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
 	msbuild /p:SolutionDir=./ /target:Build /p:Configuration=Release SushiHangover.SVGKit/SushiHangover.SVGKit.csproj
 	
-#####Building `Target:Release` also builds the Nuget package:
+##### Building `Target:Release` also builds the Nuget package:
 
 	bin/Release/SushiHangover.SVGKit.Binding.1.x.x.nupkg
 
