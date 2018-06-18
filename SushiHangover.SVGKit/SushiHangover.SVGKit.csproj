@@ -45,15 +45,13 @@
     <ObjcBindingCoreSource Include="Extras.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\SVGKit\DerivedData\SVGKit-iOS\Build\Products\Release-universal\libSVGKit-iOS.2.0.0.a">
-      <Kind>Static</Kind>
-      <ForceLoad>True</ForceLoad>
-      <Frameworks>CocoaLumberjack CoreText CoreImage QuartzCore CoreGraphics</Frameworks>
-      <LinkerFlags>-lxml2</LinkerFlags>
-    </NativeReference>
     <NativeReference Include="..\SVGKit\3rd-party-frameworks\CocoaLumberjack-2.2.0\iOS\CocoaLumberjack.framework">
       <Kind>Framework</Kind>
       <ForceLoad>True</ForceLoad>
+    </NativeReference>
+    <NativeReference Include="..\..\SushiHangover.SVGKit\SVGKit\build\Release-universal\libSVGKit-iOS.2.0.0.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>
